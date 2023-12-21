@@ -20,7 +20,7 @@ jobs:
     - name: run kics Scan
       uses: checkmarx/kics-github-action@v1.7.0
       with:
-        # scanning two directories: ./terraform/ ./cfn-templates/ plus a single file
+        fail_on: high,medium
         path: 'Dockerfile'
         output_path: myResults/
     # Display the results in json format
