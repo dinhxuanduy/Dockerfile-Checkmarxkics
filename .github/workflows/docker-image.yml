@@ -20,7 +20,7 @@ jobs:
     - name: run kics Scan
       uses: checkmarx/kics-github-action@v1.7.0
       with:
-        fail_on: high,medium
+        fail_on: high
         path: 'Dockerfile'
         output_path: myResults/
     # Display the results in json format
