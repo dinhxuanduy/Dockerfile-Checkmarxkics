@@ -21,7 +21,7 @@ jobs:
       uses: checkmarx/kics-github-action@v1.7.0
       with:
         # scanning two directories: ./terraform/ ./cfn-templates/ plus a single file
-        path: 'terraform,cfn-templates,my-other-sub-folder/Dockerfile'
+        path: 'Dockerfile'
         output_path: myResults/
     # Display the results in json format
     - name: display kics results
